@@ -15,10 +15,14 @@
 }
 
 .logo {
-  @apply cursor-pointer rounded-full border transform duration-100 ease-in-out;
+  height: 48px;
+  @apply cursor-pointer rounded-full transform duration-100 ease-in-out;
 
   &:hover {
-    @apply shadow-md;
     transform: scale(1.05);
+  }
+
+  & > img {
+    height: 100%;
   }
 }

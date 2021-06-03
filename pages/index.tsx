@@ -31,7 +31,7 @@ export async function getStaticProps({
       brands: [],
       pages: [],
     },
-    revalidate: 14400,
+    revalidate: 60,
   }
 }
 
@@ -50,6 +50,7 @@ export default function Home({
             imgProps={{
               width: i === 0 ? 1080 : 540,
               height: i === 0 ? 1080 : 540,
+              unoptimized: true,
             }}
           />
         ))}
