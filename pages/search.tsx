@@ -352,6 +352,7 @@ export default function Search({
                   imgProps={{
                     width: 480,
                     height: 480,
+                    unoptimized: true,
                   }}
                 />
               ))}

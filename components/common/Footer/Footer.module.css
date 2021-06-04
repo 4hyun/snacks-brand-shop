@@ -7,3 +7,16 @@
     @apply scale-110;
   }
 }
+
+.logo {
+  height: 30px;
+  @apply cursor-pointer transform duration-100 ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  & > img {
+    height: 100%;
+  }
+}

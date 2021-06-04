@@ -64,6 +64,8 @@ export default function Home({
             imgProps={{
               width: 320,
               height: 320,
+              unoptimized: true,
+              objectFit: 'contain',
             }}
           />
         ))}
@@ -86,6 +88,8 @@ export default function Home({
             imgProps={{
               width: i === 0 ? 1080 : 540,
               height: i === 0 ? 1080 : 540,
+              unoptimized: true,
+              objectFit: 'contain',
             }}
           />
         ))}
@@ -99,6 +103,8 @@ export default function Home({
             imgProps={{
               width: 320,
               height: 320,
+              unoptimized: true,
+              objectFit: 'contain',
             }}
           />
         ))}
