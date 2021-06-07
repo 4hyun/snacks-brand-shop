@@ -2,7 +2,7 @@
   @apply relative grid items-start gap-8 grid-cols-1 overflow-x-hidden mb-12;
 
   @screen lg {
-    @apply grid-cols-8;
+    @apply grid-cols-12;
   }
 }
 
