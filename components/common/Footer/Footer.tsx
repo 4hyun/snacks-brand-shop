@@ -22,9 +22,9 @@ const Footer: FC<Props> = ({ className, pages }) => {
   const rootClassName = cn(className)
 
   return (
-    <footer className={rootClassName}>
+    <footer className="bg-snx-cobalt">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accents-2 py-12 text-primary bg-primary transition-colors duration-150">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 border-b border-accents-2 py-12 text-primary bg-transparent transition-colors duration-150">
           <div className="col-span-1 lg:col-span-2">
             <Link href="/">
               <a className="flex flex-initial items-center font-bold md:mr-24">
@@ -37,9 +37,9 @@ const Footer: FC<Props> = ({ className, pages }) => {
           </div>
           <div className="col-span-1 lg:col-span-2">
             <ul className="flex flex-initial flex-col md:flex-1">
-              <li className="py-3 md:py-0 md:pb-4">
+              <li className="py-3 md:py-0 md:pb-4 ">
                 <Link href="/">
-                  <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
+                  <a className="text-secondary font-bold hover:text-accents-6 transition ease-in-out duration-150">
                     Home
                   </a>
                 </Link>
@@ -47,7 +47,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
               {sitePages.map((page) => (
                 <li key={page.url} className="py-3 md:py-0 md:pb-4">
                   <Link href={page.url!}>
-                    <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
+                    <a className="text-secondary font-bold hover:text-accents-6 transition ease-in-out duration-150">
                       {page.name}
                     </a>
                   </Link>
@@ -60,7 +60,7 @@ const Footer: FC<Props> = ({ className, pages }) => {
               {legalPages.map((page) => (
                 <li key={page.url} className="py-3 md:py-0 md:pb-4">
                   <Link href={page.url!}>
-                    <a className="text-primary hover:text-accents-6 transition ease-in-out duration-150">
+                    <a className="text-secondary font-bold hover:text-accents-6 transition ease-in-out duration-150">
                       {page.name}
                     </a>
                   </Link>

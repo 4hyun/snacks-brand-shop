@@ -44,6 +44,12 @@ module.exports = {
         blue: 'var(--blue)',
         green: 'var(--green)',
         red: 'var(--red)',
+        'snx-cobalt': '#273089',
+        'snx-cobalt-dark': '#141c6c',
+        'snx-purple-light': '#D6DAFF',
+        'snx-black': '#1A1B25',
+        'snx-yellow': '#F0F2A6',
+        'snx-bitter': '#FF6B6B',
       },
       textColor: {
         base: 'var(--text-base)',
